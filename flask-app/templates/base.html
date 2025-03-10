@@ -4,24 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
 </head>
 <body>
-    <nav class="Navbar">
-        <div class="Navbar-brand">
-          <a href="#About">Logo </a>
-        </div>
-        <ul class="Navbar-links">
-          <li><a href="#About" >About</a></a></li>
-          <li><a href="#Contact" >Contact</a></a></li>
-          <li><a href="#Login" >Login</a></a></li>
-          <li><a href="#SignUp" >Sign Up</a></a></li>
-          
-        </ul>
-      </nav>
-      </header>
-      <section>
-    <h1>Welcome to app!</h1>
+    
+    <header>
+        <nav class="Navbar">
+            <div class="Navbar-brand">
+                <img src="{{ url_for('static', filename='images/DUT-banner-removebg-preview.png') }}" alt="Icon" width="50" height="50">
+            </div>
+            <ul class="Navbar-links">
+              <li><a href="#About">About</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#Login">Login</a></li>
+              <li><a href="#SignUp">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<section class="Welcome" id="Welcome">
+    <h1>Welcome to DUT Finance!</h1>
 </section>
+
+<section id="About">
+    <h1>About Us</h1>
+    <p>dffjrebkvbdbvhjfdjvbdjfbkjdfkbd mndf fmbdjkbkjdnv dmbcjkdd vndf hvbkd  cxbdjbks c dffjrebkvbdbvhjfdjvbdjfbkjdfkbd
+        cvsbcdbcd dcvd  ncbvdf fd  jbjdfb mnsd c d  b jhdbfbfsdbc nbsdbckbwsfbds nbjkdbkjv  nbdckbwsjk vdx bhjdsv
+    </p>
+</section>\
+
+<section class="Contact" id="Contact">
+    <h1>Contact Us</h1>
+    <p>dffjrebkvbdbvhjfdjvbdjfbkjdfkbd mndf fmbdjkbkjdnv dmbcjkdd vndf hvbkd  cxbdjbks c dffjrebkvbdbvhjfdjvbdjfbkjdfkbd
+        cvsbcdbcd dcvd  ncbvdf fd  jbjdfb mnsd c d  b jhdbfbfsdbc nbsdbckbwsfbds nbjkdbkjv  nbdckbwsjk vdx bhjdsv
+    </p>
+</section>
+
+<footer>
+    &copy; 2024 DUT Finance | All Rights Reserved
+</footer>
+
 
 </body>
 </html>
