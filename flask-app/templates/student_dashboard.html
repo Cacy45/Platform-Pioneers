@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Student Dashboard</title>
+{% endblock %}
+
+{% block body %}
+<header>
+    <nav class="Navbar">
+        <div class="Navbar-brand">
+            <img src="{{ url_for('static', filename='images/DUT-banner-removebg-preview.png') }}" alt="Icon"
+                width="50" height="50">
+        </div>
+        <ul class="Navbar-links">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="Dashboard">
+    <h1>Welcome, Student!</h1>
+    <p>Student ID: 219000000</p>
+
+    <div class="ComplaintForm">
+        <h2>Submit a Complaint</h2>
+        <form action="/submit_complaint" method="post" enctype="multipart/form-data">
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">-- Select Category --</option>
+                <option value="bursary">Bursary</option>
+                <option value="fees">Fees</option>
+                <option value="financial_aid">Financial Aid</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="5" required></textarea><br><br>
+
+            <label for="file">Upload File (Optional):</label>
+            <input type="file" id="file" name="file"><br><br>
+
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </div>
+
+    <div class="ComplaintHistory">
+        <h2>Complaint History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Subject</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-03-10</td>
+                    <td>Bursary</td>
+                    <td>Bursary Payment Delay</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>2024-02-25</td>
+                    <td>Fees</td>
+                    <td>Incorrect Fee Calculation</td>
+                    <td>Resolved</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<footer>
+    &copy; 2024 DUT Finance | All Rights Reserved
+</footer>
+
+{% endblock %}
