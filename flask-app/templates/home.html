@@ -1,0 +1,105 @@
+{%extends 'base.html'%}
+ 
+ {%block head%}
+    <title>Home</title>
+{%endblock%}
+
+
+{%block body%}   
+    <header>
+        <nav class="Navbar">
+            <div class="Navbar-brand">
+                <img src="{{ url_for('static', filename='images/DUT-banner-removebg-preview.png') }}" alt="Icon" width="50" height="50">
+            </div>
+            <ul class="Navbar-links">
+              <li><a href="#About">About</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#Login">Login</a></li>
+              <li><a href="#SignUp">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="Welcome" id="Welcome">
+        <h1>Welcome to DUT Finance Grievance System</h1>
+        <p>
+            At DUT, we understand that financial challenges can affect your academic journey. This platform is designed to help students address any grievances related to finances in a simple and effective way.
+        </p>
+        <p>
+            Whether it's an issue with your bursary, tuition payments, or financial aid, our grievance system allows you to report, track, and resolve these concerns swiftly. Your satisfaction and well-being are our top priority!
+        </p>
+    </section>
+    
+
+    <section id="About">
+        <h1>About Us</h1>
+        <p>
+            The DUT Finance Grievance System was established to provide a transparent and efficient way for students to address financial concerns. Our aim is to ensure that every student receives the support they need to manage their academic finances effectively.
+        </p>
+        <p>
+            We are committed to resolving issues regarding tuition fees, financial aid, bursaries, and other financial matters that may arise during your academic career. Our platform offers a simple interface for students to file grievances, track their progress, and communicate with the relevant department for a quick resolution.
+        </p>
+        <p>
+            The system ensures that all grievances are handled professionally, ensuring that every student's voice is heard and acted upon.
+        </p>
+    </section>
+    
+
+    <section class="Contact" id="Contact">
+        <h1>Contact Us</h1>
+        <p>
+            For any issues regarding the grievance system or if you need assistance, feel free to reach out to us using the contact details below:
+        </p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:financegrievance@dut.ac.za">financegrievance@dut.ac.za</a>
+        </p>
+        <p>
+            <strong>Phone:</strong> +27 31 123 4567
+        </p>
+        <p>
+            You can also visit our office at the Student Finance Department:
+            <strong>Building X, Room 101, DUT Campus</strong>
+        </p>
+        <p>
+            For more information, visit our FAQ page or reach out to us directly. We're here to help you!
+        </p>
+    </section>
+
+    <section id="Explore">
+        <h1>Explore the Grievance Process</h1>
+        <p>
+            Understanding how the grievance system works is crucial for quick resolution. Here’s what you need to know:
+        </p>
+        <ol>
+            <li><strong>Submit Your Grievance:</strong> Fill out a simple form detailing your issue. Make sure to provide all relevant documentation to speed up the process.</li>
+            <li><strong>Track Your Grievance:</strong> After submitting, you will receive a tracking number to monitor the progress of your case.</li>
+            <li><strong>Get Resolution:</strong> Once your grievance is reviewed, you will receive feedback and the steps taken to resolve your concern.</li>
+        </ol>
+        <p>
+            We ensure that your grievance is handled by the appropriate department to provide a resolution within a reasonable time frame.
+        </p>
+    </section>
+
+    <section id="SignIn">
+        <h1>Sign In</h1>
+        <p>
+            Please sign in to submit a new grievance or check the status of your existing grievance. If you don't have an account, please <a href="#SignUp">sign up here</a>.
+        </p>
+        <form action="/login" method="post">
+            <label for="username">Student ID:</label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+    
+    
+    
+<footer>
+    &copy; 2024 DUT Finance | All Rights Reserved
+</footer>
+
+{%endblock%}
