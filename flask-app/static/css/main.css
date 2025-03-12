@@ -4,25 +4,24 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: sans-serif;
-    
 }
 
 .Navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:#91DDCF;
+    background-color: #91DDCF;
     padding: 1rem 2rem;
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
     backdrop-filter: blur(10px);
-    z-index: 1; /* The image was going above nav bar so this is the solution*/
+    z-index: 1;
 }
 
-.Navbar-links  {
+.Navbar-links {
     list-style-type: none;
     display: inline-flex;
     gap: 1.5rem;
@@ -31,10 +30,9 @@ body{
 .Navbar-links a {
     color: black;
     text-decoration: none;
-
 }
 
-section{
+section {
     padding: 6rem 2rem;
     min-height: 90vh;
     display: flex;
@@ -42,17 +40,111 @@ section{
     align-items: center;
     gap: 2rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    
 }
 
-
-.Welcome{
+.Welcome {
     justify-content: center;
     font-size: 2rem;
 }
 
-footer{
+footer {
     padding: 15px 15px 10px 10px;
     justify-content: center;
-    
+    background-color: #91DDCF; /* Footer color matching navbar */
 }
+
+/* Dashboard Styles */
+
+.Dashboard {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.Dashboard h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.ComplaintForm {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.ComplaintForm h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.ComplaintForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.ComplaintForm input[type="text"],
+.ComplaintForm textarea,
+.ComplaintForm select,
+.ComplaintForm input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ComplaintForm textarea {
+    resize: vertical;
+}
+
+.ComplaintForm button {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.ComplaintForm button:hover {
+    background-color: #0056b3;
+}
+
+.ComplaintHistory {
+    width: 100%;
+}
+
+.ComplaintHistory h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.ComplaintHistory table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ComplaintHistory table,
+.ComplaintHistory th,
+.ComplaintHistory td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.ComplaintHistory th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.ComplaintHistory tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+

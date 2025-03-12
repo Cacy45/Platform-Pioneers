@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Complaint Confirmation</title>
+{% endblock %}
+
+{% block body %}
+    <header>
+        <nav class="Navbar">
+            <div class="Navbar-brand">
+                <img src="{{ url_for('static', filename='images/DUT-banner-removebg-preview.png') }}" alt="Icon"
+                    width="50" height="50">
+            </div>
+            <ul class="Navbar-links">
+                <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <section class="Confirmation">
+        <h1>Complaint Submitted Successfully</h1>
+        <p>
+            Your complaint has been successfully submitted. Your complaint reference number is:
+            <strong>{{ complaint_id }}</strong>
+        </p>
+        <p>
+            You can track the status of your complaint on the <a href="{{ url_for('dashboard') }}">Student
+                Dashboard</a>.
+        </p>
+        <p>
+            We will review your complaint and get back to you as soon as possible.
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2024 DUT Finance | All Rights Reserved
+    </footer>
+{% endblock %}
