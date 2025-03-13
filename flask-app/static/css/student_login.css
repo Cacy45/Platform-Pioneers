@@ -14,7 +14,7 @@ body {
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+    background-color: rgba(0, 0, 0, 0); /* Dark transparent background */
     padding: 20px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -30,7 +30,7 @@ body {
 
 /* Login Form */
 .login-form {
-    background-color: #6a4c93; /* Dark purple background */
+    background-color: #7a5a9d; /* Dark purple background */
     padding: 40px;
     border-radius: 10px;
     width: 300px;

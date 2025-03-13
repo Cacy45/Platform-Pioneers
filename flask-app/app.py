@@ -16,6 +16,10 @@ def student_login():
 def student_dashboard():
     return render_template('student_dashboard.html')
 
+@app.route('/student_signup')
+def student_signup():
+    return render_template('student_signup.html')
+
 
 
 if __name__ == '__main__':
