@@ -1,0 +1,110 @@
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('path-to-your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Blurry Login Section */
+.login-section {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Login Form */
+.login-form {
+    background-color: #6a4c93; /* Dark purple background */
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Heading */
+.login-form h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form Inputs */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #7a5a9d; /* Lighter purple background */
+    border: 2px solid #b388e1; /* Light purple border */
+    color: white;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #b388e1; /* Light purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Submit Button Hover */
+.submit-btn:hover {
+    background-color: #9a77c4;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    color: #b388e1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Sign Up Link */
+.signup-link {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #b388e1;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}

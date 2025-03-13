@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Student Login</title>
+{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/student_login.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="{{ url_for('student_dashboard') }}" method="GET">
+                <div class="form-group">
+                    <label for="studentNumber">Student Number</label>
+                    <input type="text" id="studentNumber" name="studentNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
