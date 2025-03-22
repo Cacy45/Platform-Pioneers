@@ -1,5 +1,4 @@
-#from flask_sqlalchemy import SQLAlchemy
-#from extensions import db  # Instead of defining db again
+from flask_sqlalchemy import SQLAlchemy
 from app import db
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -89,3 +88,5 @@ class Appeal(db.Model):
     admin_id = db.Column(db.Integer, db.ForeignKey('admin.admin_id'), nullable=True)
     superv_id = db.Column(db.Integer, db.ForeignKey('supervisor.superv_id'), nullable=True)
     stud_id = db.Column(db.Integer, db.ForeignKey('student.stud_id'), nullable=False)
+
+

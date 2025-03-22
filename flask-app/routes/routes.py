@@ -1,4 +1,4 @@
-from flask import render_template, request
+"""from flask import render_template, request
 from models import Complaint
 
 def register_routes(app,db):
@@ -6,3 +6,4 @@ def register_routes(app,db):
     def index():
         complaint = Complaint.query.all()
         return str(complaint)
+"""
